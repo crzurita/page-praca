@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Abel';
+    src: url('Abel-Regular.woff2') format('woff2'),
+        url('Abel-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk BQ';
+    src: url('AkzidenzGroteskBQ-LigCnd.woff2') format('woff2'),
+        url('AkzidenzGroteskBQ-LigCnd.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alright Sans';
+    src: url('AlrightSans-Black.woff2') format('woff2'),
+        url('AlrightSans-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Provicali';
+    src:url('Provicali.ttf.woff') format('woff'),
+        url('Provicali.ttf.svg#Provicali') format('svg'),
+        url('Provicali.ttf.eot'),
+        url('Provicali.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+

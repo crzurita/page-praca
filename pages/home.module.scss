@@ -1,0 +1,73 @@
+@import '../styles/variables.module.scss';
+
+.home {
+  &__somosHacemos {
+    background-image: url('/home-section-background.png');
+    height: 1379px;
+    background-size: 100%;
+    padding-left: 24.5%;
+    padding-top: 10%;
+
+    &Content {
+      width: 55%;
+    }
+  }
+
+  &__paragraph {
+    font-size: 29px;
+
+  }
+
+  &__titleList {
+    margin: 0;
+    padding-left: 0;
+    font-family: Provicali;
+    font-size: 78px;
+
+    li {
+      list-style: none;
+      line-height: 78px;
+    }
+  }
+
+  &__itemList {
+    
+    &Black {
+      color: black;
+      letter-spacing: -10px;
+    }
+
+    &Green {
+      color: $primary;
+      letter-spacing: -10px;
+    }
+  }
+
+  &__paragraph {
+    font-size: 18px;
+  }
+}
+
+.queHacemos {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  &__title {
+    font-weight: bold;
+    font-size: 23px;
+  }
+
+  &__item {
+    width: 300px;
+    text-align: center;
+  }
+
+  &__icon {
+    img {
+      margin: 0 auto;
+    }
+  }
+}
