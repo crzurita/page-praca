@@ -10,7 +10,7 @@ const Home = () => {
           <li className={styles.home__itemListBlack}>LO</li>
           <li className={styles.home__itemListBlack}>QUE</li>
           <li className={styles.home__itemListGreen}>SOMOS</li>
-          <li className={styles.home__itemListGreen}><span style={{color: "black"}}>Y</span> LO QUE</li>
+          <li className={styles.home__itemListGreen}><span style={{color: "black"}}>Y &nbsp;</span>&nbsp;LO &nbsp; QUE</li>
           <li className={styles.home__itemListGreen}>HACEMOS</li>
         </ul>
 
@@ -71,7 +71,7 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <img className="img-responsive" src="/home-procrear-banner.jpg" alt=""/>
+      <img className="img-responsive full-width" src="/home-procrear-banner.jpg" alt=""/>
     </Page>
   )
 }
