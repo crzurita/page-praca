@@ -1,10 +1,15 @@
 import styles from './header.module.scss';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 import Carousel from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Header = () => {
+  const router = useRouter();
 const namespace = 'header';
+const links = ['HOME', 'SERVICIOS', 'PROYECTOS', 'CONTACTOS'];
+
   return (
     <header className={styles.header}>
       <div className={styles.header__title}>
@@ -21,10 +26,11 @@ const namespace = 'header';
       </div>
       <nav className={styles.header__navbar}>
         <ul className={styles.header__navigation}>
-          <li>HOME</li>
-          <li>SERVICIOS</li>
-          <li>PROYECTOS</li>
-          <li>CONTACTOS</li>
+          {links.map(link => (
+            link === 'HOME'
+              ? <li><Link href="/"><a style={{color: router.pathname.match('/') ? '#009540' : 'white'}}>{link}</a></Link></li>
+              : <li><Link href={`/${link.toLowerCase()}`}><a style={{color: router.pathname.match(link) ? '#009540' : 'white'}}>{link}</a></Link></li>
+          ))}
         </ul>
       </nav>
       <div className={styles.header__slider}>

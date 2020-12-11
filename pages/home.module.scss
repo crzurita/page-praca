@@ -3,8 +3,9 @@
 .home {
   &__somosHacemos {
     background-image: url('/home-section-background.png');
-    height: 1379px;
-    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1380px;
     padding-left: 24.5%;
     padding-top: 10%;
 
@@ -66,8 +67,188 @@
   }
 
   &__icon {
+    height: 170px;
     img {
       margin: 0 auto;
+    }
+  }
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+@media screen and (max-width: 1700px) {
+  .home {
+
+    &__somosHacemos {
+      height: 1100px;
+    }
+
+    &__titleList {
+      font-size: 70px;
+  
+      li {
+        line-height: 70px;
+      }
+    }
+
+    &__paragraph {
+      font-size: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .home {
+
+    &__titleList {
+      font-size: 68px;
+  
+      li {
+        line-height: 68px;
+      }
+    }
+
+    &__paragraph {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .home {
+
+    &__somosHacemos {
+      height: 900px;
+    }
+
+    &__titleList {
+      font-size: 56px;
+  
+      li {
+        line-height: 56px;
+      }
+    }
+
+    &__paragraph {
+      font-size: 12px;
+    }
+
+    &__itemList {
+    
+      &Black {
+        letter-spacing: -7px;
+      }
+  
+      &Green {
+        letter-spacing: -7px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+
+    &__somosHacemos {
+      background-size: 115%;
+      height: 900px;
+    }
+
+    &__titleList {
+      font-size: 56px;
+  
+      li {
+        line-height: 56px;
+      }
+    }
+
+    &__paragraph {
+      font-size: 12px;
+    }
+
+    &__itemList {
+    
+      &Black {
+        letter-spacing: -7px;
+      }
+  
+      &Green {
+        letter-spacing: -7px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home {
+
+    &__somosHacemos {
+      background-size: 166%;
+      height: 900px;
+      padding-left: 40%;
+      padding-top: 13%;
+
+      &Content {
+        width: 78%;
+      }
+    }
+
+    &__titleList {
+      font-size: 56px;
+  
+      li {
+        line-height: 56px;
+      }
+    }
+
+    &__paragraph {
+      font-size: 12px;
+    }
+
+    &__itemList {
+    
+      &Black {
+        letter-spacing: -7px;
+      }
+  
+      &Green {
+        letter-spacing: -7px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+
+    &__somosHacemos {
+      background-size: 150%;
+      height: 900px;
+    }
+
+    &__titleList {
+      font-size: 56px;
+  
+      li {
+        line-height: 56px;
+      }
+    }
+
+    &__paragraph {
+      font-size: 12px;
+    }
+
+    &__itemList {
+    
+      &Black {
+        letter-spacing: -7px;
+      }
+  
+      &Green {
+        letter-spacing: -7px;
+      }
     }
   }
 }
