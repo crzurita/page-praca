@@ -1,7 +1,7 @@
 import Page from '../../components/Page';
 import styles from './proyectos.module.scss';
 import Link from 'next/link';
-import { items } from './items';
+import items from './items';
 
 const Proyectos = () => {
   return (

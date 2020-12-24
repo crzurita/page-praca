@@ -1,7 +1,7 @@
 import Page from '../../components/Page';
 import styles from './servicios.module.scss';
 import List from './components/list';
-import { items } from './items';
+import items from './items';
 
 const Servicios = () => {
 
