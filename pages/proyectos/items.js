@@ -1,4 +1,4 @@
-export const items = [
+const items = [
   {
     id: 1,
     name: '01. VIVIENDA UNIFAMILIAR (C.S.)',
@@ -46,3 +46,5 @@ export const items = [
     image: '/proyectos-7.jpg'
   }
 ]
+
+export default items;

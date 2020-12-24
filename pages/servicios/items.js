@@ -1,4 +1,4 @@
-export const items = [
+const items = [
   {
     id: 1,
     name: 'Proyecto Obra Nueva',
@@ -129,3 +129,5 @@ export const items = [
     active: false
   }
 ]
+
+export default items;
