@@ -1,0 +1,97 @@
+@import '../../styles/variables.module.scss';
+
+.contacto {
+
+  padding: 100px 15px;
+
+  &__leftside, &__rightside {
+    flex: 1;
+  }
+
+  &__rightside {
+    margin-left: 22px;
+  }
+
+  &__leftside {
+
+    margin-right: 22px;
+    img {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    border: 1px solid black;
+    position: relative;
+
+    div {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      width: 100px;
+      background: green;
+      color: white;
+      border: none;
+      border-left: 10px solid black;
+    }
+
+    input {
+      height: 50px;
+      flex: 1;
+      border: none;
+      flex: 1;
+      font-family: Abel;
+      font-size: 18px;
+      padding: 0 10px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      flex: 1;
+      height: 443px;
+      border: none;
+      resize: none;
+      font-size: 18px;
+      padding: 10px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: $primary;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  &__mandaMensaje {
+    
+    font-size: 30px;
+
+    li {
+      vertical-align: middle;
+      display: inline;
+      list-style-type: none;
+    }
+
+    li:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

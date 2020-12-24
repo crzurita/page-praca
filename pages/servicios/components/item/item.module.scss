@@ -1,0 +1,102 @@
+@import '../../../../styles/variables.module.scss';
+
+.item {
+  transition: height 0.3s;
+
+  &Active {
+    height: 610px;
+  }
+
+  &Default {
+    height: 270px;
+  }
+
+  &__icon {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: 204px;
+    height: 270px;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60px;
+  }
+
+  &__detail {
+    background-color: $primary;
+    position: absolute;
+    left: 0;
+    width: 1200px;
+    max-width: 100%;
+    color: white;
+    display: flex;
+    height: 324px;
+    transition: opacity 0.2s;
+
+    &Default {
+      opacity: 0;
+    }
+
+    &Active {
+      opacity: 1;
+    }
+  }
+}
+
+.detail {
+
+  &__name {
+    font-family: Provicali;
+  }
+
+  &__text {
+    padding: 50px;
+    flex: 1 1 95%;
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+
+    &Active {
+      height: 920px;
+    }
+  
+    &Default {
+      height: 270px;
+    }
+
+    &__detail {
+      flex-direction: column;
+      height: 471px;
+    }
+  }
+
+  .detail {
+  
+    &__text {
+      flex: 1;
+      padding: 30px;
+    }
+  
+    &__image {
+      img {
+        max-width: 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+}

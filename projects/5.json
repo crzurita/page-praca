@@ -1,0 +1,12 @@
+{
+  "id": "5",
+  "info": {
+    "name": "05 . VIVIENDA UNIFAMILIAR  (C. O.)",
+    "project": "Proyecto y ejecución de vivienda unifamiliar.",
+    "ubication": "Malagueño, Córdoba.",
+    "year": "2015",
+    "state": "finalizada"
+  },
+  "images": ["/procesos/5/blueprints/04.jpg", "/procesos/5/blueprints/05.jpg", "/procesos/5/blueprints/06.jpg", "/procesos/5/blueprints/07.jpg", "/procesos/5/blueprints/08.jpg"],
+  "blueprints": ["/procesos/5/blueprints/01.jpg", "/procesos/5/blueprints/02.jpg", "/procesos/5/blueprints/03.jpg", "/procesos/5/blueprints/04.jpg"]
+}

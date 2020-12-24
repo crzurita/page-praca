@@ -1,0 +1,213 @@
+@import '../../../styles/variables.module.scss';
+
+.detalle {
+  padding: 100px 15px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  &__blueprint {
+    flex: 1;
+  }
+
+  &__info {
+    padding-right: 25px;
+    flex: 1;
+
+    &Project {
+      p {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__name {
+    font-family: Provicali;
+    color: $primary;
+    font-size: 37px;
+  }
+
+  &__finance, &__ubication, &__year, &__state, &__process {
+    span {
+      font-family: Provicali;
+      color: $primary;
+    }
+  }
+
+  &__process {
+    font-size: 30px;
+    span {
+      font-size: 40px;
+    }
+  }
+
+  &__imageCarousel {
+    position: relative;
+    text-align: center;
+    max-width: 554px;
+    height: 438px;
+    margin: 0 auto;
+
+    &Slide {
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-height: 438px;
+      display: none;
+      transition: 0.1s;
+      margin: 0 auto;
+
+      &Active {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+      }
+      
+    }
+
+  }
+
+  &__blueprintCarousel {
+    position: relative;
+    text-align: center;
+    max-width: 466px;
+    height: 656px;
+    padding: 37px 47px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 26px -5px black;
+    margin-bottom: 68px;
+
+    &Slide {
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-width: 100%;
+      max-height: 100%;
+      display: none;
+      transition: 0.1s;
+      margin: 0 auto;
+
+        &Active {
+          display: block;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 90%;
+          max-height: 90%;
+        }
+    }
+  }
+}
+
+.imageCarousel {
+
+  &__leftButton {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  &__rightButton {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__zoomButton {
+    text-align: right;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+}
+
+.blueprint {
+  flex: 1;
+  text-align: center;
+  padding-left: 15px;
+
+  &__name {
+    margin: 0;
+    font-family: Provicali;
+    color: $primary;
+    font-size: 37px;
+    margin-bottom: 25px;
+  }
+}
+
+.blueprintCarousel {
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  &__leftButton {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__rightButton {
+    cursor: pointer;
+  }
+
+  &__zoomButton {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .detalle {
+  
+    &__container {
+      padding: 0 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .detalle {
+    padding: 100px 15px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  
+    &__blueprint {
+      padding-left: 0;
+    }
+  
+    &__info {
+      padding-right: 0;
+    }
+  }
+
+  .imageCarousel {
+
+    &__leftButton {
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+    }
+  
+    &__rightButton {
+      top: 50%;
+      left: 100%;
+      transform: translate(-100%, -50%);
+    }
+  
+    &__zoomButton {
+      text-align: right;
+      margin-top: 50px;
+    }
+  }
+}

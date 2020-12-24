@@ -1,0 +1,12 @@
+{
+  "id": "4",
+  "info": {
+    "name": "04. CASA CONTAINER",
+    "project": "Cabaña utilizando contenedor marítimo de 12 metros",
+    "ubication": "San Isidro – Los Molinos, Córdoba.",
+    "year": "2018",
+    "state": "en obra"
+  },
+  "images": ["/procesos/4/images/02.jpg", "/procesos/4/images/03.jpg", "/procesos/4/images/04.jpg", "/procesos/4/images/06.jpg", "/procesos/4/images/07.jpg", "/procesos/4/images/08.jpg", "/procesos/4/images/09.jpg"],
+  "blueprints": ["/procesos/4/blueprints/01.jpg", "/procesos/4/blueprints/02.jpg", "/procesos/4/blueprints/03.jpg", "/procesos/4/blueprints/04.jpg"]
+}

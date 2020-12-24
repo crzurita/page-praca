@@ -1,0 +1,13 @@
+{
+  "id":"2",
+  "info": {
+    "name":"02 . VIVIENDA UNIFAMILIAR (C. P.)",
+    "project":"Proyecto y ejecución de vivienda unifamiliar",
+    "finance":"PROCREAR.",
+    "ubication":"Villa Parque Síquiman, Córdoba.",
+    "year":"2015",
+    "state":"en obra"
+  },
+  "images": ["/procesos/2/images/02.jpg", "/procesos/2/images/05.jpg"],
+  "blueprints": ["/procesos/2/blueprints/01.jpg", "/procesos/2/blueprints/02.jpg", "/procesos/2/blueprints/03.jpg"]
+}

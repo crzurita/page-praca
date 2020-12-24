@@ -1,0 +1,13 @@
+{
+  "id": "3",
+  "info": {
+    "name": "03 . VIVIENDA UNIFAMILIAR (C. N.)",
+    "project": "Proyecto y ejecución de vivienda unifamiliar",
+    "finance": "PROCREAR.",
+    "ubication": "Alta Gracia, Córdoba.",
+    "year": "2015",
+    "state": "finalizada"
+  },
+  "images": ["/procesos/3/images/05.jpg", "/procesos/3/images/06.jpg", "/procesos/3/images/07.jpg", "/procesos/3/images/95.jpg", "/procesos/3/images/10.jpg", "/procesos/3/images/11.jpg", "/procesos/3/images/13.jpg"],
+  "blueprints": ["/procesos/3/blueprints/01.jpg", "/procesos/3/blueprints/02.jpg", "/procesos/3/blueprints/03.jpg", "/procesos/3/blueprints/04.jpg"]
+}

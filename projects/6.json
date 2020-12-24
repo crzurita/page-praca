@@ -1,0 +1,12 @@
+{
+  "id": "6",
+  "info": {
+    "name": "06 . LOCAL PELUQUERÍA",
+    "project": "Reforma integral de local comercial, basada en la identidad de la marca del salón de belleza.",
+    "ubication": "Ciudad de Córdoba.",
+    "year": "2018",
+    "state": "finalizada"
+  },
+  "images": ["/procesos/6/images/01.jpg", "/procesos/6/images/02.jpg", "/procesos/6/images/03.jpg", "/procesos/6/images/04.jpg"],
+  "blueprints": ["/procesos/6/blueprints/01.jpg", "/procesos/6/blueprints/02.jpg", "/procesos/6/blueprints/03.jpg"]
+}
