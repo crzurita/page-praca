@@ -13,7 +13,7 @@ const Footer = () => {
         </ul>
         <ul className={styles.footer__contact}>
           <li><img src="/footer-icon-mail.png" alt=""/></li>
-          <li>parcaconstrucciones@gmail.com</li>
+          <li>pracaconstrucciones@gmail.com</li>
           {/* <li><img src="/footer-icon-face.png" alt=""/></li>
           <li><img src="/footer-icon-insta.png" alt=""/></li> */}
         </ul>
