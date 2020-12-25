@@ -1,6 +1,6 @@
 import Page from '../../components/Page';
 import styles from './servicios.module.scss';
-import List from './components/list';
+import List from '../../components/services/list';
 import { getServicios } from '../../lib/servicios';
 
 export async function getStaticProps() {
