@@ -35,3 +35,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'MontserratExLight';
+    src: url('MontserratAlternates-ExtraLightItalic.woff2') format('woff2'),
+        url('MontserratAlternates-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+

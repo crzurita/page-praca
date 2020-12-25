@@ -1,0 +1,76 @@
+@import '../../styles/variables.module.scss';
+
+.proyectos {
+  padding: 100px 15px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  
+
+  &__image {
+    margin-bottom: 100px;
+    max-width: 500px;
+  }
+
+  &__item {
+    text-align: center;
+    cursor: pointer;
+    max-width: 300px;
+
+    &Image {
+      position: relative;
+      transition: 0.3s;
+    }
+
+    &Triangulo {
+      position: absolute;
+      bottom: -22px;
+      right: -22px;
+      transition: 0.3s;
+    }
+
+    &:hover {
+
+      div {
+        transition: 0.3s;
+        box-shadow: 0.1px 0.1px 10px -2px black;
+
+        img:not(:first-child) {
+          bottom: -2px;
+          right: -2px;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+  &__name {
+    font-size: 26px;
+    font-family: Provicali;
+    color: $primary;
+    margin-bottom: 10px;
+  }
+
+  &__caption {
+    margin: 0;
+    font-size: 26px;
+    font-family: Abel;
+    &Green {
+      color: $primary;
+      font-family: Provicali;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .proyectos {
+
+    &__item {
+  
+      &Image {
+        width: fit-content;
+        margin: 0 auto;
+      }
+    }
+  }
+}

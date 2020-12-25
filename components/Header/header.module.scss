@@ -6,12 +6,12 @@
     position: relative;
     margin: 0 auto;
     bottom: 0;
-    top: 132px;
+    top: 50px;
   }
 
   &__title {
     background-color: $primary;
-    height: 293px;
+    height: 200px;
     width: 100%;
     position: relative;
     text-align: center;
@@ -35,12 +35,13 @@
     li {
       list-style: none;
     }
+
   }
 
   &__socialNetwork {
     margin: 0;
     position: absolute;
-    top: 170px;
+    top: 120px;
     right: 30px;
 
     li {
@@ -56,5 +57,45 @@
   &__slider {
     max-width: 100%;
     overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    
+    &__navbar {
+      padding: 0;
+    }
+
+    &__navigation {
+      position: fixed;
+      top: 0;
+      display: block;
+      background-color: black;
+      width: 250px;
+      height: 100%;
+      z-index: 10;
+      padding: 50px 30px 0;
+      opacity: 0.9;
+      transition: left 0.4s;
+  
+      li {
+        list-style: none;
+        padding: 5px 0;
+        font-size: 30px;
+      }
+
+      &Closed {
+        left: -100%;
+      }
+  
+      &Open {
+        left: 0;
+      }
+    }
+
+    &__socialNetwork {
+      display: none;
+    }
   }
 }

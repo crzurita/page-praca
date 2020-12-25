@@ -79,6 +79,13 @@
 }
 
 @media screen and (max-width: 1700px) {
+  .queHacemos {
+
+    &__icon {
+      max-width: 150px;
+      margin: 0 auto;
+    }
+  }
   .home {
 
     &__somosHacemos {
@@ -117,10 +124,14 @@
 }
 
 @media screen and (max-width: 1500px) {
+
   .home {
 
     &__somosHacemos {
+      background-image: url('/home-main-background.png');
+      background-position: bottom;
       height: 900px;
+      padding-left: 12%;
     }
 
     &__titleList {
@@ -132,7 +143,7 @@
     }
 
     &__paragraph {
-      font-size: 12px;
+      font-size: 17px;
     }
 
     &__itemList {
@@ -165,7 +176,7 @@
     }
 
     &__paragraph {
-      font-size: 12px;
+      font-size: 17px;
     }
 
     &__itemList {
@@ -185,9 +196,9 @@
   .home {
 
     &__somosHacemos {
-      background-size: 166%;
+      background-size: 110%;
       height: 900px;
-      padding-left: 40%;
+      padding-left: 10%;
       padding-top: 13%;
 
       &Content {
@@ -204,7 +215,7 @@
     }
 
     &__paragraph {
-      font-size: 12px;
+      font-size: 16px;
     }
 
     &__itemList {
@@ -221,11 +232,22 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .queHacemos {
+      flex-direction: column;
+      align-items: center;
+
+      &__item {
+        margin-bottom: 50px;
+      }
+  }
+
   .home {
 
     &__somosHacemos {
-      background-size: 150%;
-      height: 900px;
+      background-size: 385%;
+      height: 702px;
+      padding: 0 15px;
     }
 
     &__titleList {
@@ -237,7 +259,7 @@
     }
 
     &__paragraph {
-      font-size: 12px;
+      font-size: 16px;
     }
 
     &__itemList {

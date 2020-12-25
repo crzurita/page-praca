@@ -1,0 +1,57 @@
+[
+  {
+     "id":1,
+     "name":"CASA AZNAR PLAATE",
+     "description":"Proyecto para vivienda de dos plantas en topología serrana, compuesta por sector social e ingreso en PA y privado en PB. En colaboración con Arq. Kassis.",
+     "ubication":"Ascochinga, Córdoba.",
+     "year":"2014.",
+     "state":"en proyecto.",
+     "blueprints":[
+        "/mas-proyectos/1/01.jpg",
+        "/mas-proyectos/1/02.jpg",
+        "/mas-proyectos/1/03.jpg"
+     ]
+  },
+  {
+     "id":2,
+     "name":"REFORMA Y AMPLIACIÓN",
+     "description":"Proyecto para reforma integral y ampliación en casa de campo",
+     "ubication":"Falda del Carmen, Córdoba.",
+     "year":"2015.",
+     "state":"ejecutado",
+     "blueprints":[
+        "/mas-proyectos/2/01.jpg",
+        "/mas-proyectos/2/02.jpg",
+        "/mas-proyectos/2/03.jpg",
+        "/mas-proyectos/2/04.jpg",
+        "/mas-proyectos/2/05.jpg",
+        "/mas-proyectos/2/06.jpg"
+     ]
+  },
+  {
+     "id":3,
+     "name":"ESTUDIO DE FOTOGRAFÍA GALPÓN PRIMA",
+     "description":"Proyecto de refuncionalización de galpón, donde funciona un estudio de fotografía en PB y dormitorio en PA.",
+     "ubication":"Saturnino M. Laspiur, Córdoba.",
+     "year":"2012.",
+     "state":"ejecutado",
+     "blueprints":[
+        "/mas-proyectos/3/01.jpg",
+        "/mas-proyectos/3/02.jpg",
+        "/mas-proyectos/3/03.jpg"
+     ]
+  },
+  {
+     "id":4,
+     "name":"LOCALES COMERCIALES Y DEPARTAMENTOS PARA INVERSIÓN",
+     "description":"Proyecto de inversión de locales comerciales en PB y departamentos para renta en PA. ",
+     "ubication":"Villa Allende, Córdoba",
+     "year":"2016.",
+     "state":"ejecutado",
+     "blueprints":[
+        "/mas-proyectos/4/01.jpg",
+        "/mas-proyectos/4/02.jpg",
+        "/mas-proyectos/4/03.jpg"
+     ]
+  }
+]

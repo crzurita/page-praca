@@ -1,0 +1,96 @@
+.imageCarousel {
+  position: relative;
+  text-align: center;
+  max-width: 1200px;
+  height: 530px;
+  margin: 0 auto;
+
+  &Slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-height: 438px;
+    display: none;
+    transition: 0.1s;
+    margin: 0 auto;
+
+    &Active {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    }
+    
+  }
+
+}
+
+.imageCarousel {
+  
+  background-color: white;
+  box-shadow: 5px 5px 26px -5px black;
+
+&__leftButton {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+&__rightButton {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+&__zoomButton {
+  text-align: right;
+  margin-top: 50px;
+  cursor: pointer;
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .detalle {
+
+    &__container {
+      padding: 0 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .detalle {
+
+    &__container {
+      padding: 18px;
+    }
+  }
+
+  .imageCarousel {
+
+    box-shadow: none;
+
+    &__leftButton {
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+    }
+
+    &__rightButton {
+      top: 50%;
+      left: 100%;
+      transform: translate(-100%, -50%);
+    }
+
+    &__zoomButton {
+      text-align: right;
+      margin-top: 50px;
+    }
+  }
+}
