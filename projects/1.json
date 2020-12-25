@@ -9,5 +9,5 @@
     "state": "finalizada"
   },
   "images": ["/procesos/1/images/02.jpg", "/procesos/1/images/03.jpg", "/procesos/1/images/05.jpg", "/procesos/1/images/06.jpg", "/procesos/1/images/07.jpg", "/procesos/1/images/10.jpg", "/procesos/1/images/11.jpg", "/procesos/1/images/12.jpg"],
-  "blueprints": ["/procesos/1/blueprints/1.png", "/procesos/1/blueprints/2.jpg"]
+  "blueprints": ["/procesos/1/blueprints/1.jpg", "/procesos/1/blueprints/2.jpg"]
 }

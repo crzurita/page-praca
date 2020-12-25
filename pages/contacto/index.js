@@ -21,12 +21,18 @@ const Contacto = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const companyPhone = '3515064135';
+    const companyPhone = '543517910555';
     const message = getTemplate(form).replace(' ', '%20');
     location.assign(`https://api.whatsapp.com/send?phone=${companyPhone}&text=${message}`);
   }
+
+  const layout = {
+    header: {
+      slider: false
+    }
+  }
   return (
-    <Page title="Praca">
+    <Page title="Praca" layout={layout}>
       <section className={styles.contacto}>
         <form onSubmit={onSubmit}>
         <div className="flex flex-center margin-center max-width-1200 margin-bottom-5">

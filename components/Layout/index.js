@@ -2,13 +2,13 @@ import Header from '../Header';
 import Footer from '../Footer';
 
 
-const Layout = ({defaultHeader = true, defaultFooter = true, children}) => {
+const Layout = ({header, footer, children}) => {
 
   return(
     <div>
-      {defaultHeader && <Header />}
+      {header && <Header {...header} />}
       <main>{children}</main>
-      {defaultFooter && <Footer />}
+      {footer && <Footer />}
     </div>
   )
 }

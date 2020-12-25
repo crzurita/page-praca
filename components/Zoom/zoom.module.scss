@@ -20,4 +20,12 @@
     max-width: 90%;
     max-height: 90%;
   }
+
+  &__rotateButton {
+    position: absolute;
+    right: 0.7%;
+    top: 5%;
+    width: 70px;
+    cursor: pointer;
+  }
 }

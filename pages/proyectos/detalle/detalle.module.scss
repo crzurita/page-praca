@@ -177,11 +177,16 @@
 
 @media screen and (max-width: 768px) {
   .detalle {
+
     padding: 100px 15px;
     max-width: 1200px;
     box-sizing: border-box;
     margin: 0 auto;
-  
+
+    &__container {
+      padding: 0;
+    }
+    
     &__blueprint {
       padding-left: 0;
     }

@@ -9,11 +9,13 @@
 
   &__image {
     margin-bottom: 100px;
+    max-width: 500px;
   }
 
   &__item {
     text-align: center;
     cursor: pointer;
+    max-width: 300px;
 
     &Image {
       position: relative;

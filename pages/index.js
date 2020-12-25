@@ -1,5 +1,10 @@
 import Page from '../components/Page'
 import styles from './home.module.scss';
+const layoutProps = {
+  header: {
+    slider: false
+  }
+}
 
 const Home = () => {
   return (

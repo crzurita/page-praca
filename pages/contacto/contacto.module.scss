@@ -95,3 +95,16 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .contacto {
+
+    &__mandaMensaje {
+      padding: 0;
+    }
+  
+    &__leftside, &__rightside {
+      margin: 0;
+    }
+  }
+}

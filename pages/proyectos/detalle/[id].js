@@ -22,6 +22,7 @@ export async function getStaticPaths() {
   }
 }
 
+
 const Detalle = ({detail}) => {
   const { info, images, blueprints } = JSON.parse(detail);
   const router = useRouter();
@@ -68,9 +69,15 @@ const Detalle = ({detail}) => {
     }
     setter(slider);
   }
+
+  const layout = {
+    header: {
+      slider: false
+    }
+  }
   
   return (
-    <Page title="Praca">
+    <Page title="Praca" layout={layout}>
       <section className={styles.detalle}>
       <Zoom {...isZoom} onExit={applyZoom} />
       <div className={`${styles.detalle__container} flex flex-center margin-center max-width-1200 margin-bottom-5`}>

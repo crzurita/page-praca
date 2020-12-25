@@ -2,11 +2,14 @@ import Head from 'next/head';
 import Layout from '../Layout';
 import styles from '../../styles/utils.module.scss';
 const initialLayout = {
-  defaultHeader: true,
-  defaultFooter: true
+  header: {
+    slider: true,
+  },
+  footer: true
 }
 
 const Page = ({children, title, layout = initialLayout}) => {
+  const asdf = layout ? Object.assign({}, initialLayout, layout.header) : initialLayout;
   const renderLayout = layout
     ? (<Layout {...layout}>
         {children}

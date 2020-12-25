@@ -6,12 +6,12 @@
     position: relative;
     margin: 0 auto;
     bottom: 0;
-    top: 132px;
+    top: 50px;
   }
 
   &__title {
     background-color: $primary;
-    height: 293px;
+    height: 200px;
     width: 100%;
     position: relative;
     text-align: center;
@@ -41,7 +41,7 @@
   &__socialNetwork {
     margin: 0;
     position: absolute;
-    top: 170px;
+    top: 120px;
     right: 30px;
 
     li {

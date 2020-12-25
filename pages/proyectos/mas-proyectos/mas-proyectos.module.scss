@@ -1,0 +1,88 @@
+@import '../../../styles/variables.module.scss';
+
+.detalle {
+  padding: 100px 15px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  &__container {
+    margin-bottom: 50px;
+    padding: 50px;
+
+    &Even {
+      background-color: white;
+    }
+
+    &Odd {
+      background-color: $primary;
+      color: white;
+
+      .detalle {
+
+        &__name, &__ubication span, &__year span, &__state span {
+          color: white
+        }
+      }
+    }
+
+  }
+
+  &__info {
+    padding-right: 25px;
+    flex: 1;
+
+    &Project {
+      p {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__name {
+    font-family: Provicali;
+    color: $primary;
+    font-size: 37px;
+  }
+
+  &__finance, &__ubication, &__year, &__state, &__process {
+    span {
+      font-family: Provicali;
+      color: $primary;
+    }
+  }
+
+  &__process {
+    font-size: 30px;
+    span {
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .detalle {
+  
+    &__container {
+      padding: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .detalle {
+    padding: 100px 15px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    &__container {
+      padding: 18px;
+    }
+  
+    &__info {
+      padding-right: 0;
+    }
+  }
+}

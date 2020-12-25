@@ -3,14 +3,16 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import MenuIcon from './components/menu-icon';
 import Link from 'next/link';
+import { getSlides } from './content';
 import Carousel from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Header = () => {
+const Header = ({slider}) => {
   const router = useRouter();
   const [menuState, setMenuState] = useState(false);
   const links = ['HOME', 'SERVICIOS', 'PROYECTOS', 'CONTACTO'];
+  const slides = getSlides(router.pathname);
 
   return (
     <header className={styles.header}>
@@ -22,12 +24,12 @@ const Header = () => {
               src="/header-logo.png" />
           </div>
         </div>
-        <ul className={styles.header__socialNetwork}>
+        {/* <ul className={styles.header__socialNetwork}>
           <li><img src="/icon-facebook.png" alt=""/></li>
           <li><img src="/icon-instagram.png" alt=""/></li>
-        </ul>
+        </ul> */}
       </div>
-      <nav className={styles.header__navbar}>
+     <nav className={styles.header__navbar}>
         <ul className={`${styles.header__navigation} ${menuState ? styles.header__navigationOpen : styles.header__navigationClosed}`}>
           {links.map(link => (
             link === 'HOME'
@@ -36,14 +38,14 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-      <div className={styles.header__slider}>
+      {slider && <div className={styles.header__slider}>
         <Carousel
           autoplay={true}>
-          <img src="/home-slide1.jpg" />
-          <img src="/home-slide2.jpg" />
-          <img src="/home-slide3.jpg" />
+            {slides.map(slide => (
+              <img key={slide.id} src={slide.slide} />
+            ))}
         </Carousel>
-      </div>
+      </div>}
     </header>
   )
 }
