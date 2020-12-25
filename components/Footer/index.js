@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './footer.module.scss';
 const Footer = () => {
 
@@ -5,10 +6,10 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footer__container}>
         <ul className={styles.footer__links}>
-          <li>HOME</li>
-          <li>SERVICIOS</li>
-          <li>PROYECTOS</li>
-          <li>CONTACTANOS</li>
+          <li><Link href="/">HOME</Link></li>
+          <li><Link href="/servicios">SERVICIOS</Link></li>
+          <li><Link href="/proyectos">PROYECTOS</Link></li>
+          <li><Link href="/contacto">CONTACTANOS</Link></li>
         </ul>
         <ul className={styles.footer__contact}>
           <li><img src="/footer-icon-mail.png" alt=""/></li>

@@ -42,7 +42,7 @@ const Header = ({slider}) => {
         <Carousel
           autoplay={true}>
             {slides.map(slide => (
-              <img key={slide.id} src={slide.slide} />
+              <img key={slide.slide} src={slide.slide} />
             ))}
         </Carousel>
       </div>}
